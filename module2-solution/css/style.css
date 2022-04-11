@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+body {
+    font-family: 'PT Sans Caption', sans-serif;
+}
+section {
+    display: flex;
+    flex: column;
+    gap: 16px;
+}
+section article {
+    position: relative;
+    padding: 28px 8px 16px;
+    background-color: #9E9E9E;
+    border: 2px solid #000;
+}
+section article div {
+    position: absolute;
+    padding: 8px 16px;
+    top: -2px;
+    right: -2px;
+    border: 2px solid #000;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title {
+    text-align: center;
+    text-transform: capitalize;
+}
+section article:nth-child(1) div {
+    background-color: #EF9A9A;
+}
+section article:nth-child(2) div {
+    background-color: #F44336;
+    color: #fff;
+}
+section article:nth-child(3) div {
+    background-color: #FFF59D;
+}
+@media only screen and (min-width: 768px) {
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    section article:nth-child(1) {
+        flex:1
+    }
+    section article:nth-child(2) {
+        flex: 1;
+    }
+    section article:nth-child(3) {
+        width: 100%;
+    }
+    @media only screen and (min-width: 992px) {
+        section article {
+            flex: 1;
+        }
+    }
+    
+}
